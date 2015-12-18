@@ -2,7 +2,7 @@ FROM centos:centos7
 
 MAINTAINER "Björn Dieding" <bjoern@xrow.de>
 
-ENV container docker
+ENV container=docker
 
 RUN yum -y update; yum clean all
 RUN yum -y install socat; yum clean all
